@@ -23,6 +23,8 @@ ul{
 	background-position: center;
 	position: relative;
 }
+
+/*Logo - CARt*/
 .logo{
 	position: absolute;
 	left: 50px;
@@ -45,6 +47,7 @@ ul{
     font-size: 2.5rem;
 }
 
+/* Search box*/
 .side-box{
 	position: absolute;
 	right: 170px;
@@ -87,6 +90,8 @@ ul{
 	margin: 0px auto;
 }
 
+
+/* User and Cart icon*/
 .right-menu {
     position: absolute;
 	right: 0px;
@@ -130,6 +135,8 @@ ul{
     font-weight: 400;
 }
 
+
+/* Login and Signup form CSS*/
 .form{
     width:100%;
     height: 100%;
@@ -245,6 +252,8 @@ ul{
     }
 }
 
+
+/* HEro */
 .m-img{
     position:absolute;
     left:15%;
@@ -315,6 +324,8 @@ ul{
 	transition: all ease 0.5s;
 }
 
+
+/* Social icons on left*/
 .social a{
 	display: flex;
 	flex-direction: column;
@@ -355,6 +366,8 @@ ul{
 	color: 	#FF0000;
 }
  
+
+/* New Arrivals list*/
 .product{
 	width: 85%;
 	background-color: #FFFFFF;
@@ -475,62 +488,17 @@ ul{
 
 .banner-box{
     width:100%;
-     height: 40vh;
-    margin: 20px 0px;
+    height: 350px;
+    margin: 55px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/banner.jpg);
+    background-image: url(images/banner1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
  
-.banner-text-container{
-    width:80%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-}
- 
-.banner-text{
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-}
- 
-.banner-text strong{
-    color: #333333;
-    font-size: 3rem;
-    line-height: 55px;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
- 
-.banner-text span{
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-weight: 500;
-    color: #666666;
-    font-size: 1.2rem;
-}
- 
-.banner-btn{
-    width:170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    background-color: #0b9d8a;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 14px;
-}
-.banner-text strong font{
-    color: #0b9d8a;
-}
-
 .subcribe-container{
 width:100%;	
 height:250px;
@@ -541,6 +509,7 @@ justify-content: center;
 align-items: center;
 border-bottom: 2px solid rgba(0,0,0,0.03);
 }
+
 .subcribe-container h3{
 font-size: 2rem;
 color: rgb(56, 56, 56);
@@ -650,6 +619,40 @@ footer font{
     font-family: Verdana;
 }
 
+
+/* Men Clothing Categories*/
+.categories{
+	position:fixed;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 0px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	padding: 5px 0px;
+	z-index: 1;
+}
+
+.categories a{
+	margin: 10px;
+	color:#202020;
+    font-family: Verdana;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+}
+
+.categories a:hover{
+    color: #6b60ec;
+}
+
+.categories #category{
+    color: #6b60ec;
+    font-family: Verdana;
+    font-size: 1.2rem;
+}
 
 @media(max-width:1230px){
 	.m-img img{
