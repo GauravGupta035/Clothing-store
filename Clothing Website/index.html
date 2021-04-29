@@ -8,6 +8,7 @@
     <link href="images/logo.png" rel="shortcut icon" />
     <!--stylesheet-------------------->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -37,7 +38,7 @@
       </div>
 
       <div class="right-menu">
-        <a href="javascript:void(0);" class="user">
+        <a href="javascript:void(0);" class="user" id="user-cta" onclick="popUp()">
           <i class="far fa-user"></i>
         </a>
 
@@ -56,7 +57,7 @@
           src="https://kit.fontawesome.com/c8e4d183c2.js"
         ></script>
         <!--login---------->
-        <div class="login-form">
+        <div class="form-login-active" id="login">
           <!--cancel-btn---------------->
           <a href="javascript:void(0);" class="form-cancel">
             <i class="fas fa-times"></i>
@@ -80,7 +81,7 @@
           </form>
           <!--forget-and-sign-up-btn-->
           <div class="form-btns">
-            <a href="#" class="forget">Forget Your Password?</a>
+            <a href="#" class="forget">Forgot Your Password?</a>
             <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
           </div>
         </div>
@@ -124,7 +125,7 @@
 
         <script>
           /*---For Login and Sign-up----------------------------*/
-          $(document).on("click", ".user,.already-account", function () {
+          $(document).on("click", ".user, .already-account", function () {
             $(".form").addClass("login-active").removeClass("sign-up-active");
           });
 
@@ -137,6 +138,12 @@
               .removeClass("login-active")
               .removeClass("sign-up-active");
           });
+
+          // let user = document.getElementById('user-cta');
+          // user.onclick = function(event) {
+          //   user.classList.add('form-login-active').remove('sign-up-active');
+          //   console.log('Successful');
+          // }
         </script>
       </div>
 
@@ -262,7 +269,7 @@
         <div class="p-box">
           <img alt="9" src="images/kids3.jpg" />
           <!--details--------->
-          <p>Demin t-shit & skirt.</p>
+          <p>Denim t-shit & skirt.</p>
           <!--price--->
           <a class="price" href="#">₹1499</a>
           <!--buy-btn-->
@@ -272,122 +279,113 @@
     </section>
 
     <section>
-      <!--banner-->
-      <div class="banner-box f-slide-3">
-        <div class="banner-text-container">
-          <div class="banner-text">
-            <span>Limited Offer</span>
-            <strong
-              >30% Off<br />
-              With <font>Promo Code</font></strong
-            >
-            <a href="#" class="banner-btn">Shop Now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Accessories------------------->
-    <section class="product" id="accessories">
-      <!--heading------------>
-      <div class="p-heading">
-        <h3>A<font>CC</font>essories</h3>
-      </div>
-
-      <!--product-container----------------->
-      <div class="product-container">
-        <!--box-1------------>
-        <div class="p-box">
-          <img alt="1" src="images/b6.png" />
-          <!--details--------->
-          <p>Blue Women Leather Bag.</p>
-          <!--price--->
-          <a class="price" href="#">₹1699</a>
-          <!--buy-btn-->
-          <a class="buy-btn" href="#">Add To Cart</a>
-        </div>
-
-        <!--box-2------------>
-        <div class="p-box">
-          <img alt="2" src="images/w2.png" />
-          <!--details--------->
-          <p>Fashion Men Watch.</p>
-          <!--price--->
-          <a class="price" href="#">₹5999</a>
-          <!--buy-btn-->
-          <a class="buy-btn" href="#">Add To Cart</a>
-        </div>
-
-        <!--box-3------------>
-        <div class="p-box">
-          <img alt="3" src="images/w3.png" />
-          <!--details--------->
-          <p>Fashion Women Chain Watch.</p>
-          <!--price--->
-          <a class="price" href="#">₹2999</a>
-          <!--buy-btn-->
-          <a class="buy-btn" href="#">Add To Cart</a>
-        </div>
-
-        <!--box-4------------>
-        <div class="p-box">
-          <img alt="4" src="images/accessories1.jpg" />
-          <!--details--------->
-          <p>Multi Layer Necklaces.</p>
-          <!--price--->
-          <a class="price" href="#">₹399</a>
-          <!--buy-btn-->
-          <a class="buy-btn" href="#">Add To Cart</a>
-        </div>
-
-        <!--box-5------------>
-        <div class="p-box">
-          <img alt="5" src="images/accessories2.png" />
-          <!--details--------->
-          <p>Men Square Sunglasses.</p>
-          <!--price--->
-          <a class="price" href="#">₹850</a>
-          <!--buy-btn-->
-          <a class="buy-btn" href="#">Add To Cart</a>
-        </div>
-
-        <!--box-6------------>
-        <div class="p-box">
-          <img alt="6" src="images/accessories3.png" />
-          <!--details--------->
-          <p>Women Butterfly Sunglasses.</p>
-          <!--price--->
-          <a class="price" href="#">₹799</a>
-          <!--buy-btn-->
-          <a class="buy-btn" href="#">Add To Cart</a>
-        </div>
-      </div>
-    </section>
-    <!--subscribe------------------------->
-    <section class="subcribe-container">
-      <!--heading-->
-      <h3>Subcribe For New Product Notification</h3>
-      <!--Input-------->
-      <div class="subcribe-input">
-        <input placeholder="Eample@gmail.com" type="email" />
-        <a class="subcribe-btn" href="#">Send</a>
-      </div>
-    </section>
-
-    <!--footer--------------------->
-    <footer>
-      <h3><font>CA</font>RT</h3>
-      <!--footer-menu---------------->
-      <ul class="footer-menu">
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#accessories">Accessories</a></li>
-      </ul>
-    </footer>
-    <!--copyright--------------->
-    <a class="copyright" href="#"
-      >&#169; Copyright 2020. Shop Site By Going To Internet</a
-    >
-  </body>
+     <!--banner-->
+    <div class="banner-box">
+    </div> 
+   </section>
+    
+	<!--Accessories------------------->
+<section class="product" id="accessories">
+		<!--heading------------>
+	<div class="p-heading">
+		<h3>A<font>CC</font>essories</h3>
+	</div>
+    
+	<!--product-container----------------->
+	<div class="product-container">
+        
+		<!--box-1------------>
+		<div class="p-box">
+		<img alt="1" src="images/b6.png" />
+		<!--details--------->
+		<p>Blue Women Leather Bag.</p>
+		<!--price--->
+		<a class="price" href="#">₹1699</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+		</div>
+        
+		<!--box-2------------>
+		<div class="p-box">
+			<img alt="2" src="images/w2.png" />
+			<!--details--------->
+			<p>Fashion Men Watch.</p>
+			<!--price--->
+			<a class="price" href="#">₹5999</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-3------------>
+		<div class="p-box">
+			<img alt="3" src="images/w3.png" />
+			<!--details--------->
+			<p>Fashion Women Chain Watch.</p>
+			<!--price--->
+			<a class="price" href="#">₹2999</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-4------------>
+		<div class="p-box">
+			<img alt="4" src="images/accessories1.jpg"/>
+			<!--details--------->
+			<p>Multi Layer Necklaces.</p>
+			<!--price--->
+			<a class="price" href="#">₹399</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-5------------>
+		<div class="p-box">
+			<img alt="5" src="images/accessories2.png" />
+			<!--details--------->
+			<p>Men Square Sunglasses.</p>
+			<!--price--->
+			<a class="price" href="#">₹850</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-6------------>
+		<div class="p-box">
+			<img alt="6" src="images/accessories3.png" />
+			<!--details--------->
+			<p>Women Butterfly Sunglasses.</p>
+			<!--price--->
+			<a class="price" href="#">₹799</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+		</div>
+		
+	</section>
+	<!--subscribe------------------------->
+	<section class="subcribe-container">
+		<!--heading-->
+		<h3>Subcribe For New Product Notification</h3>
+		<!--Input-------->
+		<div class="subcribe-input">
+			<input placeholder="Eample@gmail.com" type="email" />
+			<a class="subcribe-btn" href="#">Send</a>
+		</div>
+	</section>
+    
+    
+	<!--footer--------------------->
+	<footer>
+		<h3><font>CA</font>RT</h3>
+		<!--footer-menu---------------->
+		<ul class="footer-menu">
+			<li><a href="MenClothing.html">Men</a></li>
+			<li><a href="#">Women</a></li>
+			<li><a href="#">Kids</a></li>
+			<li><a href="#accessories">Accessories</a></li>
+		</ul>
+	</footer>
+<!--copyright--------------->
+<a class="copyright" href="#">&#169; Copyright 2020. Shop Site By Going To Internet</a>
+</body>
 </html>

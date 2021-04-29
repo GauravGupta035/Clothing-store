@@ -1,49 +1,62 @@
-import sqlite3
+customers = {
+    'Name': [],
+    'Address': [],
+    'Contact': [],
+    'Email': [],
+    'Password': [],
+    'Cart Items': {
+        'Product Name': [],
+        'Product Price': []
+    }
+}
 
-def add_customer(name, address, contact, email):
-    conn = sqlite3.connect('database.db', timeout=15)
-    c = conn.cursor()
 
-    c.execute('''INSERT INTO customers (NAME, ADDRESS, CONTACT, EMAIL) VALUES (?, ?, ?, ?)''', (name, address, contact, email))
+# import sqlite3
 
-    conn.commit()
-    print('Successful')
-    conn.close()
+# def add_customer(name, address, contact, email):
+#     conn = sqlite3.connect('database.db', timeout=15)
+#     c = conn.cursor()
 
-# add_customer('Jin Woo', 'Seoul', '888-555', 'jinwoo@gmail.com')
+#     c.execute('''INSERT INTO customers (NAME, ADDRESS, CONTACT, EMAIL) VALUES (?, ?, ?, ?)''', (name, address, contact, email))
 
-def add_product(product_name, category, size, price):
-    conn = sqlite3.connect('database.db', timeout=15)
-    c = conn.cursor()
+#     conn.commit()
+#     print('Successful')
+#     conn.close()
 
-    c.execute('''INSERT INTO products (PRODUCT_NAME, CATEGORY, SIZE, PRICE) VALUES (?, ?, ?, ?)''', (product_name, category, size, price))
+# # add_customer('Jin Woo', 'Seoul', '888-555', 'jinwoo@gmail.com')
 
-    conn.commit()
-    print('Successful')
-    conn.close()
+# def add_product(product_name, category, size, price):
+#     conn = sqlite3.connect('database.db', timeout=15)
+#     c = conn.cursor()
 
-# add_product('Floral skirt', 'Women', 'M', '399.99')
+#     c.execute('''INSERT INTO products (PRODUCT_NAME, CATEGORY, SIZE, PRICE) VALUES (?, ?, ?, ?)''', (product_name, category, size, price))
 
-def add_order(customerID):
-    conn = sqlite3.connect('database.db', timeout=15)
-    c = conn.cursor()
+#     conn.commit()
+#     print('Successful')
+#     conn.close()
 
-    c.execute('''INSERT INTO orders (CUSTOMER_ID) VALUES (?)''', (customerID))
+# # add_product('Floral skirt', 'Women', 'M', '399.99')
 
-    conn.commit()
-    print('Successful')
-    conn.close()
+# def add_order(customerID):
+#     conn = sqlite3.connect('database.db', timeout=15)
+#     c = conn.cursor()
 
-# add_order('3')
+#     c.execute('''INSERT INTO orders (CUSTOMER_ID) VALUES (?)''', (customerID))
 
-def add_shippings(orderID, productID, quantity):
-    conn = sqlite3.connect('database.db', timeout=15)
-    c = conn.cursor()
+#     conn.commit()
+#     print('Successful')
+#     conn.close()
 
-    c.execute('''INSERT INTO shippings (ORDER_ID, PRODUCT_ID, QUANTITY) VALUES (?,?,?)''', (orderID, productID, quantity))
+# # add_order('3')
 
-    conn.commit()
-    print('Successful')
-    conn.close()
+# def add_shippings(orderID, productID, quantity):
+#     conn = sqlite3.connect('database.db', timeout=15)
+#     c = conn.cursor()
 
-# add_shippings(2, 3, 1)
+#     c.execute('''INSERT INTO shippings (ORDER_ID, PRODUCT_ID, QUANTITY) VALUES (?,?,?)''', (orderID, productID, quantity))
+
+#     conn.commit()
+#     print('Successful')
+#     conn.close()
+
+# # add_shippings(2, 3, 1)
