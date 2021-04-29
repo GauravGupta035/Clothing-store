@@ -1,0 +1,376 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="IE-edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clothing Website</title>
+<!--web-icon------------------->
+<link href="images/logo.png" rel="shortcut icon"/>
+
+<!--stylesheet-------------------->
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="media-queries.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--FontAwesome-------->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
+</head>
+
+
+<body>
+        
+<!--main-section--------------->
+	<section class="main">
+        
+	<!--logo------------->
+		<div class="logo">
+			<a href="#"><font>CA</font>RT</a>
+		</div>
+        
+	<!--side-menu------------->
+        <div class="side-box">    
+		          <!--search------------->
+		      <div class="search">
+		          <!--icon----------->
+		      <i class="fas fa-search"></i>
+		      <input placeholder="Search" type="text" />
+		      </div>
+		</div>
+       
+        <div class="right-menu">
+            <!--User icon-->
+            <a href="javascript:void(0);" class="user">
+                <i class="far fa-user"></i>
+            </a>
+            <!--Cart icon-->
+            <a href="#">
+                <i class="fas fa-shopping-cart">
+                    <span class="num-cart-product">10</span>
+                </i>
+            </a>
+        </div>
+     
+    <!---login-and-sign-up--------------------------------->
+
+		<div class="form">
+		<!--login---------->
+		<div class="login-form">
+			
+			<!--cancel-btn---------------->
+			<a href="javascript:void(0);" class="form-cancel">
+				<i class="fas fa-times"></i>
+			</a>
+			<strong>Log In</strong>
+			<!--inputs-->
+			<form>
+				<input type="email" name="email" placeholder="Example@gmail.com" required/>
+				<input type="password" name="password" placeholder="Password" required/>
+				<input type="submit" value="Log In"/>
+			</form>
+			<!--forget-and-sign-up-btn-->
+			<div class="form-btns">
+				<a href="#" class="forget">Forget Your Password?</a>
+				<a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+			</div>
+		
+			</div>
+			<!--Sign-up---------->
+			<div class="sign-up-form">
+				<!--cancel-btn---------------->
+			<a href="javascript:void(0);" class="form-cancel">
+				<i class="fas fa-times"></i>
+			</a>
+				<strong>Sign Up</strong>
+				<!--inputs-->
+				<form>
+					<input type="text" name="fullname" placeholder="Full Name" required/>
+					<input type="email" name="email" placeholder="Example@gmail.com" required/>
+					<input type="password" name="password" placeholder="Password" required/>
+					<input type="submit" value="Sign Up"/>
+				</form>
+				
+				<!--forget-and-sign-up-btn-->
+				<div class="form-btns">
+					<a href="javascript:void(0);" class="already-account">
+						Already Have Account?</a>
+
+				</div>
+			</div>
+
+			<script>
+			
+				/*---For Login and Sign-up----------------------------*/
+				$(document).on('click','.user,.already-account',function(){
+				$('.form').addClass('login-active').removeClass('sign-up-active')
+				});
+	
+				$(document).on('click','.sign-up-btn',function(){
+				$('.form').addClass('sign-up-active').removeClass('login-active')
+				});
+	
+				$(document).on('click','.form-cancel',function(){
+				$('.form').removeClass('login-active').removeClass('sign-up-active')
+				});
+	
+			</script>
+		</div>
+
+        
+    <!--img banner--------->
+    <div class="m-img">
+        <img alt="" src="images/undraw_online_shopping_ga73.svg" />    
+    </div>
+        
+	<!--text------------>
+    <div class="m-text">
+        <h1>A<font>LL</font> New</h1>
+        <h2>Co<font>ll</font>ections</h2>
+        
+        <!--btn------------>
+        <a class="m-btn" href="#">Details</a>
+    </div>
+        
+    <!--social icons-------->
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</section>
+    
+    
+<!--New Arrival content-->
+    
+<section class="product">
+
+	<!--heading------------>
+	<div class="p-heading">
+		<h3>New a<font>RR</font>ivals</h3>
+	</div>
+        
+        
+	<!--product-container----------------->
+	<div class="product-container">
+        
+	<!--box-1------------>
+	<div class="p-box">
+	   <img alt="1" src="images/men1.png" />
+	   <!--details--------->
+	   <p>Relaxed Fit T-shirt.</p>
+	   <!--price--->
+	   <a class="price" href="#">₹499</a>
+	   <!--buy-btn-->
+	   <a class="buy-btn" href="#">Add To Cart</a>
+	</div>
+        
+	<!--box-2------------>
+	<div class="p-box">
+		<img alt="2" src="images/men2.png" />
+		<!--details--------->
+		<p>Regular Fit t-shirt.</p>
+		<!--price--->
+		<a class="price" href="#">₹599</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+    </div>
+        
+	<!--box-3------------>
+	<div class="p-box">
+		<img alt="3" src="images/men3.png" />
+		<!--details--------->
+		<p>Regular Fit t-shirt.</p>
+		<!--price--->
+		<a class="price" href="#">₹799</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+    </div>
+        
+	<!--box-4------------>
+	<div class="p-box">
+		<img alt="4" src="images/women1.jpg" />
+		<!--details--------->
+		<p>Demin Wide Leg Jeans.</p>
+		<!--price--->
+		<a class="price" href="#">₹980</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+    </div>
+        
+	<!--box-5------------>
+	<div class="p-box">
+		<img alt="5" src="images/women2.jpg" />
+		<!--details--------->
+		<p>Polka Dot Slip Dress.</p>
+		<!--price--->
+		<a class="price" href="#">₹790</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+    </div>
+        
+	<!--box-6------------>
+	<div class="p-box">
+		<img alt="6" src="images/women3.jpg" />
+		<!--details--------->
+		<p>Multi Color Crop Top.</p>
+		<!--price--->
+		<a class="price" href="#">₹699</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+		</div>
+
+    
+	<!--box-7------------>
+	<div class="p-box">
+		<img alt="7" src="images/men4.jpg" />
+		<!--details--------->
+		<p>Patterned Resot Shirt.</p>
+		<!--price--->
+		<a class="price" href="#">₹799</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+		</div>
+	
+    
+    <!--box-8------------>
+	<div class="p-box">
+		<img alt="8" src="images/women4.jpg" />
+		<!--details--------->
+		<p>Tie-Dye Placket T-shirt.</p>
+		<!--price--->
+		<a class="price" href="#">₹999</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+		</div>
+	
+    
+    <!--box-9------------>
+	<div class="p-box">
+		<img alt="9" src="images/women5.jpg" />
+		<!--details--------->
+		<p>Solid Tank Top.</p>
+		<!--price--->
+		<a class="price" href="#">₹499</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+		</div>
+ </div>
+  
+</section>
+
+    
+<!--Banner-->
+<section>
+    <div class="banner-box">
+    </div> 
+</section>
+    
+
+
+<!--Accessories------------------->
+<section class="product" id="accessories">
+		<!--heading------------>
+	<div class="p-heading">
+		<h3>A<font>CC</font>essories</h3>
+	</div>
+    
+	<!--product-container----------------->
+	<div class="product-container">
+        
+		<!--box-1------------>
+		<div class="p-box">
+		<img alt="1" src="images/b6.png" />
+		<!--details--------->
+		<p>Pouched Shoulder Bag.</p>
+		<!--price--->
+		<a class="price" href="#">₹1499</a>
+		<!--buy-btn-->
+		<a class="buy-btn" href="#">Add To Cart</a>
+		</div>
+        
+		<!--box-2------------>
+		<div class="p-box">
+			<img alt="2" src="images/w2.png" />
+			<!--details--------->
+			<p>Fashion Men Watch.</p>
+			<!--price--->
+			<a class="price" href="#">₹5999</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-3------------>
+		<div class="p-box">
+			<img alt="3" src="images/w3.png" />
+			<!--details--------->
+			<p>Fashion Women Chain Watch.</p>
+			<!--price--->
+			<a class="price" href="#">₹2999</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-4------------>
+		<div class="p-box">
+			<img alt="4" src="images/accessories1.jpg"/>
+			<!--details--------->
+			<p>Multi Layer Necklaces.</p>
+			<!--price--->
+			<a class="price" href="#">₹399</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-5------------>
+		<div class="p-box">
+			<img alt="5" src="images/accessories2.png" />
+			<!--details--------->
+			<p>Men Square Sunglasses.</p>
+			<!--price--->
+			<a class="price" href="#">₹850</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+        
+		<!--box-6------------>
+		<div class="p-box">
+			<img alt="6" src="images/accessories3.png" />
+			<!--details--------->
+			<p>Women Butterfly Sunglasses.</p>
+			<!--price--->
+			<a class="price" href="#">₹799</a>
+			<!--buy-btn-->
+			<a class="buy-btn" href="#">Add To Cart</a>
+			</div>
+		</div>
+		
+</section>
+    
+    
+<!--subscribe------------------------->
+<section class="subcribe-container">
+		<!--heading-->
+		<h3>Subcribe For New Product Notification</h3>
+		<!--Input-------->
+		<div class="subcribe-input">
+			<input placeholder="example@gmail.com" type="email" />
+			<a class="subcribe-btn" href="#">Send</a>
+		</div>
+</section>
+    
+    
+<!--footer--------------------->
+	<footer>
+		<h3><font>CA</font>RT</h3>
+		<!--footer-menu---------------->
+		<ul class="footer-menu">
+			<li><a href="MenClothing.html">Men</a></li>
+			<li><a href="WomenClothing.html">Women</a></li>
+			<li><a href="Accessories.html">Accessories</a></li>
+		</ul>
+	</footer>
+
+<!--copyright--------------->
+<a class="copyright" href="#">&#169; Copyright 2020. Shop Site By Going To Internet</a>
+
+</body>
+</html>
