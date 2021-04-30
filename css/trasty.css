@@ -1,0 +1,161 @@
+h3,label,button,a,p {
+    font-family: 'Poppins', sans-serif;
+}
+.tabs {
+    display: none;
+}
+.shopcart {
+    height: 20em;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 6px 10px 16px -2px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 6px 10px 16px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 6px 10px 16px -2px rgba(0,0,0,0.48);
+
+}
+.checkouttab{
+    height: 30em;
+    width: 90%;
+    border: 1px solid #222831;
+    border-radius: 0.15em;
+    background-color: #f0f0f0 ;
+    margin: auto;
+}
+.sections {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.sections button{
+    background-color: inherit;
+    color: black;
+    font-weight: 700;
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: flex;
+    transition: 0.2s;
+}
+.sections button:hover {
+    background-color: #DCDCDC;
+}
+.sections button:active {
+    background-color: #222831;
+    color: white;
+}
+#custdetails label {
+    font-weight: 700;
+    margin-right: 2%;
+}
+#custdetails img {
+    margin-right:2% ;
+}
+#shipdetails label {
+    font-weight: 700;
+    margin-right: 2%;
+}
+#shipdetails img {
+    margin-right:2% ;
+}
+#paydetails label {
+    font-weight: 700;
+    margin-right: 2%;
+}
+#paydetails img {
+    margin-right:2% ;
+}
+.doubledet {
+    margin-left: 2%;
+}
+.formicon {
+    height: 30px;
+    width: 30px;
+}
+input {
+    width: 15%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#custbaddress, #custsaddress {
+    width: 30%;
+}
+.vl {
+    border-left: 1px solid #ccc;
+    height: 10em;
+    position: absolute;
+    left: 35%;
+    margin-left: -3px;
+    top: 35%;
+  }
+.payoptions {
+    margin-left: 2%;
+}
+form {
+    margin-left: 2%;
+}
+.paymentbox {
+    width: 80%;
+}
+.paymentbox input {
+    width: 40%;
+}
+.card-pay {
+    display: inline-block;
+}
+.ol-pay {
+    display: inline-block;
+    margin-left: 10%;
+}
+.ol-pay input {
+    width: 25%;
+}
+.backpage {
+    text-decoration: none;
+    color: #393e46;
+    background-color: #aad8d3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3%;
+    position: relative;
+    left: -10%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;    
+}
+.backpage:hover {
+    background-color: #00adb5;
+}
+.nextpage {
+    background-color: #aad8d3;
+    color: #393e46;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    left: 40%;
+    margin-top: 3%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;    
+}
+.lastcon {
+    background-color: #aad8d3;
+    color: #393e46;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    left: 60%;
+    margin-top: 3%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;    
+}
+.lastcon:hover , .nextpage:hover {
+    background-color: #00adb5;
+}
