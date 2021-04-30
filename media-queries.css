@@ -1,0 +1,108 @@
+
+@media(max-width:1230px){
+	.m-img img{
+		height: 350px;
+	}
+	.m-text h1,h2{
+		font-size:3.5rem;
+	}
+}
+
+
+@media(max-width:1045px){
+	.main{
+		background-size: 600px;
+	}
+	.m-img{
+		display:none;
+	}
+	.m-text{
+		left:50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+	}
+   
+}
+
+@media(max-width:600px){
+	.social{
+		display: none;
+	}
+    
+	.logo{
+	left: 30px;
+	top:30px;
+	}
+    
+	.logo a{
+		font-size: 1.4rem;;
+	}
+    
+	.side-box{
+		right:30px;
+		top:30px;
+	}
+    
+	.m-text{
+		overflow-wrap: break-word;
+		display: flex;
+		flex-direction: column;
+		margin:auto;
+	}
+    
+	.m-text h1,h2{
+		font-size: 2.5rem;
+		line-height:40px;
+		margin:0px 20px;
+		letter-spacing: 10px;
+	 }
+    
+	 .m-text h2{
+		font-size: 1.2rem;
+	 }
+    
+	 .m-btn{
+		 margin:0px 20px;
+	 }
+    
+	 .product{
+		 width:88%;
+	 }
+    
+	 .p-box{
+		margin:20px 10px;
+		padding:10px 20px;
+		 width:100%;
+		 text-align: center;
+	 }
+    
+	 .subcribe-input{
+		width:95%;
+	 }
+    
+	.subcribe-container h3{
+		font-size:1.4rem;
+		text-align: center;
+        font-family: Verdana;
+	}
+    
+	 .footer-menu{
+		 width:100%;
+		 margin:20px;
+		 flex-wrap: wrap;
+		 background-color:none;
+		 box-shadow: none;
+	 }
+    
+	 .footer-menu li a{
+		 background-color:#fff;
+		 border-radius: 20px;
+		 box-shadow:2px 2px 30px rgba(0, 0, 0, 0.1) ;
+		 padding:10px 30px !important;
+	 }
+    
+	.copyright {
+		 text-align: center;
+	 }	
+ 
+}
