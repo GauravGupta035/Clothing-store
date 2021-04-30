@@ -13,41 +13,51 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--FontAwesome-------->
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
+<!-- jQuery import -->
+<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
 </head>
 
-
 <body>
+<!--header nav--------------------->
+<header>
+	<!--logo------------->
+	<div class="logo">
+		<a href="#"><font>CA</font>RT</a>
+	</div>
+	<!--header-menu---------------->
+	<ul class="header-menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="MenClothing.html">Men</a></li>
+		<li><a href="WomenClothing.html">Women</a></li>
+		<li><a href="Accessories.html">Accessories</a></li>
+	</ul>
+
+	<!--side-menu------------->
+	<div class="side-box">    
+		<!--search------------->
+		<div class="search">
+		<!--icon----------->
+			<i class="fas fa-search"></i>
+			<input placeholder="Search" type="text" />
+		</div>
+	</div>
+ 
+  	<div class="right-menu">
+	  <!--User icon-->
+	  <a href="javascript:void(0);" class="user">
+		  <i class="far fa-user"></i>
+	  </a>
+	  <!--Cart icon-->
+	  <a href="#">
+		  <i class="fas fa-shopping-cart">
+			  <span class="num-cart-product">10</span>
+		  </i>
+	  </a>
+  	</div>
+</header>
         
 <!--main-section--------------->
 	<section class="main">
-        
-	<!--logo------------->
-		<div class="logo">
-			<a href="#"><font>CA</font>RT</a>
-		</div>
-        
-	<!--side-menu------------->
-        <div class="side-box">    
-		          <!--search------------->
-		      <div class="search">
-		          <!--icon----------->
-		      <i class="fas fa-search"></i>
-		      <input placeholder="Search" type="text" />
-		      </div>
-		</div>
-       
-        <div class="right-menu">
-            <!--User icon-->
-            <a href="javascript:void(0);" class="user">
-                <i class="far fa-user"></i>
-            </a>
-            <!--Cart icon-->
-            <a href="#">
-                <i class="fas fa-shopping-cart">
-                    <span class="num-cart-product">10</span>
-                </i>
-            </a>
-        </div>
      
     <!---login-and-sign-up--------------------------------->
 
@@ -356,21 +366,18 @@
 			<a class="subcribe-btn" href="#">Send</a>
 		</div>
 </section>
-    
-    
-<!--footer--------------------->
-	<footer>
-		<h3><font>CA</font>RT</h3>
-		<!--footer-menu---------------->
-		<ul class="footer-menu">
-			<li><a href="MenClothing.html">Men</a></li>
-			<li><a href="WomenClothing.html">Women</a></li>
-			<li><a href="Accessories.html">Accessories</a></li>
-		</ul>
-	</footer>
 
 <!--copyright--------------->
 <a class="copyright" href="#">&#169; Copyright 2020. Shop Site By Going To Internet</a>
+
+<!-- <script>
+	const spawn = require('child_process').spawn;
+	const sensor = spawn('python', ['database.py'])
+
+	sensor.stdout.on('data', function(data) {
+		console.log('Working');
+	})
+</script> -->
 
 </body>
 </html>

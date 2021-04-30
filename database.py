@@ -52,7 +52,7 @@ def add_customer(name, address, contact, email):
     print('Successful')
     conn.close()
 
-add_customer('Jin Woo', 'Seoul', '888-555', 'jinwoo@gmail.com')
+# add_customer('Jin Woo', 'Seoul', '888-555', 'jinwoo@gmail.com')
 
 def add_product(product_name, category, size, price):
     conn = sqlite3.connect('database.db', timeout=15)
