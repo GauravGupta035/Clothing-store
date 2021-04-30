@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Checkout</title>
+    <link rel="stylesheet" href="css/alternate.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="checkouttab">
+        <div class="sections">
+            <button class="tablinks" onclick="opentab(event, 'custdetails')" id="defaultOpen">Customer Details</button>
+            <button class="tablinks" onclick="opentab(event, 'shipdetails')">Shipping Address</button>
+            <button class="tablinks" onclick="opentab(event, 'paydetails')">Payment </button>
+        </div>
+        <div id="custdetails" class="tabs">
+            <div class="form-stuff">
+            <form>
+                <h3>Enter your details</h3>
+                <label for="custname"><img class="formicon" src="images/usericon.png">Name </label>
+                <input type="text" id="custname" name="firstname" placeholder="Jane Doe">
+                <br>
+                <label for="custmail"><img class="formicon" src="images/mailicon.png">Email ID </label>
+                <input type="email" id="custmail" name="mailid" placeholder="janedoe@mail.com">
+                <br>
+                <label for="custphone"><img class="formicon" src="images/phoneicon.png">Contact Number </label>
+                <input type="tel" id="custphone" name="tele" placeholder="123-456-7890">
+                <br>
+                <label for="custcountry"><img class="formicon" src="images/countryicon.png">Country </label>
+                <input type="text" id="custcountry" name="country" placeholder="India">
+                <label for="custcity" class="doubledet">City </label>
+                <input type="text" id="custcity" name="city" placeholder="Bangalore">
+                <br>
+                <button type="submit" class="nextpage" >Continue to shipping</button>
+                <a href="#" class="backpage">&larr; Back to cart</a>
+            </form>
+            </div>
+            <div class="shop-cart">
+                
+            </div>
+        </div>
+        <div id="shipdetails" class="tabs">
+            <div class="form-stuff">
+                <form>
+                    <h3>Billing Address</h3>
+                        <label for="custbaddress"><img class="formicon" src="images/addressicon.png">Billing Address</label>
+                        <input type="text" id="custbaddress" name="billingaddress">
+                    <h3>Shipping Address</h3>
+                        <label for="custsaddress"><img class="formicon" src="images/addressicon.png">Shipping Address</label>
+                        <input type="text" id="custsaddress" name="shippingaddress">
+                        <br>
+                        <label for="custzipc"><img class="formicon" src="images/zcicon.png">Zip Code</label>
+                        <input type="number" id="custzipc" name="zipcode">
+                        <br>
+                        <button type="submit" class="nextpage">Continue to payment</button>
+                        <a href="#" class="backpage" >&larr; Back to personal details</a>
+                    </form>
+            </div>
+            <div class="shop-cart">
+            </div>
+        </div>
+        <div id="paydetails" class="tabs">
+                <div class="payoptions">
+                <h3>Enter your payment details</h3>
+                <p>Accepted payment methods :</p>
+                <img src="images/visaicon.png" class="formicon">
+                <img src="images/amexicon.png" class="formicon">
+                <img src="images/mastercardicon.png" class="formicon">
+                <img src="images/paypalicon.png" class="formicon">
+                <br>
+                </div>
+                <br>
+                <div class="paymentbox">
+                    <form>
+                    <div class="card-pay">
+                        
+                            <label for="custcd">Card Number </label>
+                            <input type="text" id="custcd" name="cardnum" placeholder="xxxx-xxxx-xxxx">
+                            <br>
+                            <label for="custcdex">Card Expiry Date </label>
+                            <input type="date" id="custcdex" name="cardexdate" placeholder="dd/mm/yyyy">
+                            <br>
+                            <label for="custcvv">CVV Number</label>
+                            <input type="number" id="custcvv" name="cvvnumber" placeholder="xxx">
+                            <br>
+                            <div class="vl"></div>
+                    </div>
+                    <div class="ol-pay">
+                            <label for="custol">PayPal Account Number </label>
+                            <input type="number" id="custol" name="accnum" placeholder="xxx-xxx-xxxx">
+                            <br>
+                            <label for="custotp">One Time Password</label>
+                            <input type="number" id="custotp" name="otp" placeholder="xxxxxx">
+                            <br>
+                    </div>
+                    <br>
+                   <button type="submit" class="lastcon"><a href="https://www.sandbox.paypal.com/checkoutnow?sessionID=0821a4f834_mdg6mzi6mjq&buttonSessionID=3f8d67afd0_mdg6mzi6mzq&fundingSource=paypal&buyerCountry=US&locale.x=en_US&enableFunding.0=paylater&clientID=ATssuyeiKXrkPP1TfoIcMXMoLBIO7ps9B2HN34eiAuhIuktEMTX0m_IVahzN3Ep3OXA8L33o0LxkkhiN&env=sandbox&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWwuY29tL3Nkay9qcz9jbGllbnQtaWQ9QVRzc3V5ZWlLWHJrUFAxVGZvSWNNWE1vTEJJTzdwczlCMkhOMzRlaUF1aEl1a3RFTVRYMG1fSVZhaHpOM0VwM09YQThMMzNvMEx4a2toaU4mY29tbWl0PWZhbHNlJmN1cnJlbmN5PVVTRCZkaXNhYmxlLWZ1bmRpbmc9Y2FyZCZlbmFibGUtZnVuZGluZz1wYXlsYXRlciZidXllci1jb3VudHJ5PVVTJmxvY2FsZT1lbl9VUyZjb21wb25lbnRzPW1lc3NhZ2VzLGJ1dHRvbnMiLCJhdHRycyI6eyJkYXRhLXVpZCI6ImEzMDNkYjczZjVfbWRnNm16aTZtemkifX0&xcomponent=1&version=5.0.219&token=6L55726316117802B" target="_blank" id="payD">Confirm payment</a></button>
+                    <a href="#" class="backpage">&larr; Back to shipping address</a>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("defaultOpen").click();
+        function opentab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+        
+            // Get all elements with class="tabs" and hide them
+            tabcontent = document.getElementsByClassName("tabs");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+        
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active","");
+            }
+        
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+
+        }
+    </script>
+</body>
+</html>
